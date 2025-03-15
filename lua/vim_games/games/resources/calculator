@@ -1,0 +1,7 @@
+public class Calculator {
+    public int add(int a, int b) {
+        int result = a + b;
+        System.out.println("Sum: " + result);
+        return result;
+    }
+}

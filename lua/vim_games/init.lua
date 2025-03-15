@@ -4,6 +4,7 @@ M.games = {}
 
 function load_games()
   M.games.relative_jump = require("vim_games.games.relative_jump")
+  M.games.find = require("vim_games.games.find")
 end
 
 function load_core_commands()

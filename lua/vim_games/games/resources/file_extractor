@@ -1,0 +1,6 @@
+public class FileExtractor {
+    public String getFileExtension(String filename) {
+        int lastDotIndex = filename.lastIndexOf('.');
+        return lastDotIndex > 0 ? filename.substring(lastDotIndex + 1) : "";
+    }
+}
