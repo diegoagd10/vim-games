@@ -54,7 +54,13 @@ end
 
 function write_lines_into(buffer)
   local content = read_file("resources/array_max_finder")
-  vim.api.nvim_buf_set_lines(buffer, 0, -1, false, content)
+  
+  local lines = {}
+  for line in string.gmatch(content, "[^\r\n]+") do
+    table.insert(lines, line)
+  end
+
+  vim.api.nvim_buf_set_lines(buffer, 0, -1, false, lines)
 end
 
 function read_file(filename)
