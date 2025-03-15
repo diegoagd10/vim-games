@@ -1,6 +1,0 @@
-public class Greeter {
-    public void greet(String name, int hour) {
-        String timeOfDay = (hour < 12) ? "morning" : (hour < 18) ? "afternoon" : "evening";
-        System.out.println("Good " + timeOfDay + ", " + name + "!");
-    }
-}
